@@ -1,0 +1,67 @@
+.main {
+  width: 550px;
+  display: grid;
+  margin: auto;
+  background: $white;
+  padding-top: 45px;
+
+  .card {
+    padding-inline: 40px;
+    display: flex;
+
+    &--image {
+      max-width: 125px;
+      max-height: 168px;
+      border-radius: 5px;
+
+      & > img {
+      }
+    }
+
+    &--content {
+      margin: 19px 0 0 19px;
+
+      &--location {
+        display: flex;
+        align-items: center;
+        line-height: 12px;
+        margin-bottom: 7px;
+
+        & > img {
+          width: 7px;
+          height: 9.55px;
+        }
+
+        & > span {
+          letter-spacing: 0.17em;
+          margin-left: 4px;
+          margin-right: 12px;
+        }
+
+        & > a {
+          color: $gray;
+        }
+      }
+
+      &--title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 7px;
+      }
+
+      &--date {
+        font-weight: 700;
+        line-height: 12px;
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid $line;
+    width: 470px;
+    background-color: $line;
+    margin-block: 18px;
+  }
+}
